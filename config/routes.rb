@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'playlists#index'
+  get '/auth/:provider/callback', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy', as: :logout
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

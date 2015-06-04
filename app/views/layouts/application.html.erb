@@ -16,6 +16,14 @@
     <ul class="nav navbar-nav">
       <li><%= link_to 'Top-40', 'http://www.kissfm.ua/kissparad/top40' %></li>
     </ul>
+    <ul class="nav navbar-nav pull-right">
+      <% if current_user %>
+        <li><span><%= current_user.name %></span></li>
+        <li><%= link_to 'Log Out', logout_path, method: :delete %></li>
+      <% else %>
+        <li><%= link_to 'Log In', '/auth/google_oauth2' %></li>
+      <% end %>
+    </ul>
   </div>
 </div>
 

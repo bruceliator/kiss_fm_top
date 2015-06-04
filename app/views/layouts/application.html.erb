@@ -8,6 +8,25 @@
 </head>
 <body>
 
+<div class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <%= link_to 'Kiss-list', root_path, class: 'navbar-brand' %>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><%= link_to 'Top-40', 'http://www.kissfm.ua/kissparad/top40' %></li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+  <% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>">
+      <%= value %>
+    </div>
+  <% end %>
+</div>
+
 <%= yield %>
 
 </body>

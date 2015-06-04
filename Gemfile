@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
-
+gem 'yt', '~> 0.13.7'
+gem 'bootstrap-sass', '~> 3.3.0.1'
+gem 'autoprefixer-rails'
+gem 'omniauth-google-oauth2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record

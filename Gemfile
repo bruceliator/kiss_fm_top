@@ -4,6 +4,9 @@ gem 'yt', '~> 0.13.7'
 gem 'bootstrap-sass', '~> 3.3.0.1'
 gem 'autoprefixer-rails'
 gem 'omniauth-google-oauth2'
+gem 'nokogiri', '~> 1.6.6.2'
+gem 'yourub'
+gem 'dotenv-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
@@ -46,5 +49,6 @@ group :development, :test do
   gem 'spring'
 
   gem 'pry'
+
 end
 

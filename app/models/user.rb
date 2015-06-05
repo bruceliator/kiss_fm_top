@@ -8,4 +8,8 @@ class User < ActiveRecord::Base
       user
     end
   end
+
+  def youtube
+    @yt_api ||= Yt::Account.new access_token: token
+  end
 end

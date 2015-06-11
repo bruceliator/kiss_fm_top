@@ -12,7 +12,7 @@ class YoutubeController < ApplicationController
 
   def find_urls
     ids = []
-    top_list.each do |item|
+    top_list[0..9].each do |item|
       search_client.search(query: item, max_results: 1) do |v|
         ids << v['id']
       end

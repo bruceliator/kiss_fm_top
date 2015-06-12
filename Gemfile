@@ -7,6 +7,7 @@ gem 'omniauth-google-oauth2'
 gem 'nokogiri', '~> 1.6.6.2'
 gem 'yourub'
 gem 'dotenv-rails'
+gem 'delayed_job_active_record'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 gem 'rails_12factor', group: :production

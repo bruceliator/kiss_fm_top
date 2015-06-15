@@ -13,11 +13,6 @@ class CreatePlaylist
     ids = find_urls
     ids.each { |id| playlist.add_video id }
   end
-  handle_asynchronously :create_in_background
-
-  def success(job)
-
-  end
 
   private
 

@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  URL = 'http://www.kissfm.ua/kissparad/top40'
+  URL = 'https://www.kissfm.ua/kissparad/top40'
 
   private
 
